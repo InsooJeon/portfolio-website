@@ -1,13 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
 
 export const metadata: Metadata = {
   title: "Vibe Labs — Where vibes become rocket products",
@@ -21,9 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={inter.variable}>
+    <html lang="ko">
       <body
-        className={`antialiased bg-[#080808] text-white ${inter.className}`}
+        className="antialiased bg-[#080808] text-white"
         style={{ fontFeatureSettings: '"ss01", "cv01"' }}
       >
         {/* Noise texture overlay */}
